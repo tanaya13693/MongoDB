@@ -3,6 +3,11 @@ MongoDB University M001 Lectures:
 Chapter 1: Introduction
 
 MongoDB Clusters are running on MongoDB Atlas(Hosted MongoDB as a service platform). It s runnig on Amazon AWS.
-MongoDB Compass: GUI to access MongoDB clusters.
+MongoDB Compass: GUI client to access MongoDB clusters.
 
+Database has collections and collection has documents.
+E.g. city.neighbourhod.doc1 = database.collection.document
 
+*Documents: Scalar Value Types
+For documents in collection, MongoDB Compass can show 'schema' that can give better sense of data types, range of values, etc.
+Data Types: int32, string, double, date
