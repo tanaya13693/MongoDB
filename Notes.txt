@@ -11,3 +11,18 @@ E.g. city.neighbourhod.doc1 = database.collection.document
 *Documents: Scalar Value Types
 For documents in collection, MongoDB Compass can show 'schema' that can give better sense of data types, range of values, etc.
 Data Types: int32, string, double, date
+
+
+*MongoDB Documents: Fields with documents as values
+document can have a field with documents and so on. i.e. nested documents as the fields.
+
+In MOngoDB, data models are flexible. Not all documents can have same fields. We can add supplimentary datain the form of arrays with values. 
+
+Object and document terms are used interchangeably. 
+
+A document/Object can have geosacial data such as combination of an array and other document. Compass used 3rd party plugin for geographical visualization of geosatial fields in your document. 
+
+MongoDB Filtering:
+1. Quality filter: {"tripduration": "600"}  //for exact match
+2. Range filter:{"tripduration": {"$gte":600, "$lt":1200}}  //for match between range of values
+
