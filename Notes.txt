@@ -1,5 +1,6 @@
 MongoDB University M001 Lectures:
 
+---------------------------------------------------------------------------------------------------------------------
 Chapter 1: Introduction
 
 MongoDB Clusters are running on MongoDB Atlas(Hosted MongoDB as a service platform). It s runnig on Amazon AWS.
@@ -25,4 +26,18 @@ A document/Object can have geosacial data such as combination of an array and ot
 MongoDB Filtering:
 1. Quality filter: {"tripduration": "600"}  //for exact match
 2. Range filter:{"tripduration": {"$gte":600, "$lt":1200}}  //for match between range of values
+
+----------------------------------------------------------------------------------------------------------------
+
+Chapter 2: MongoDB Query Language + Atlas
+
+CRUD: Create, Read, Update , Delete
+
+Mongo Shell: Used for MongoDB Query Language
+
+Download and install MongoDB Enterprise Server. Set environment variable to the bin folder.
+
+Command to verify the installation: >mongo --nodb
+To escape command prompt: >quit()
+
 
