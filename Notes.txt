@@ -29,9 +29,7 @@ MongoDB Filtering:
 
 ----------------------------------------------------------------------------------------------------------------
 
-Chapter 2: MongoDB Query Language + Atlas
-
-CRUD: Create, Read, Update , Delete
+Chapter 2: MongoDB Query Language(CRUD) + Atlas
 
 Mongo Shell: Used for MongoDB Query Language
 
@@ -39,5 +37,25 @@ Download and install MongoDB Enterprise Server. Set environment variable to the 
 
 Command to verify the installation: >mongo --nodb
 To escape command prompt: >quit()
+
+*Important Commands*
+1. Connecting to MongoDB Atlas Cluster and connect to 'test' database:
+>mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluster0-shard-00-02-jxeqq.mongodb.net:27017/test?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl --username m001-student --password m001-mongodb-basics
+2. switch to video database:
+>use video
+3. Show Collections:
+>show collections
+4. Show movies:
+db.movies.find().pretty()
+
+Create new Atlas Cluster: https://cloud.mongodb.com/links/registerForAtlas
+IP Whitelisting - to allow access from anywhere
+Note: IP Whitelisting should be present for security reasons.
+Create a user in MongoDB cluster for DB access
+u m001-student, p m001-mongodb-basics
+
+*Commands to access Atlas cluster and data*
+
+
 
 
