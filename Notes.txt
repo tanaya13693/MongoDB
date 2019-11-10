@@ -83,6 +83,11 @@ Method 2: Use Compass GUI
 *Insert many document*
 Refer and load file "insertMany-ordered.js"
 
+*Readingdocument/filterig syntax*
+1. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("type":"movie").pretty()
+2. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("wind.type":"C").pretty()
+3. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("wind.direction.angle":10).pretty()
+
 
 
 
