@@ -41,11 +41,14 @@ To escape command prompt: >quit()
 *Important Commands*
 1. Connecting to MongoDB Atlas Cluster and connect to 'test' database:
 >mongo "mongodb://cluster0-shard-00-00-jxeqq.mongodb.net:27017,cluster0-shard-00-01-jxeqq.mongodb.net:27017,cluster0-shard-00-02-jxeqq.mongodb.net:27017/test?replicaSet=Cluster0-shard-0" --authenticationDatabase admin --ssl --username m001-student --password m001-mongodb-basics
-2. switch to video database:
->use video
+2. 
+  i. List all databses
+      >show dbs
+ ii. switch to video database:
+      >use video
 3. Show Collections:
 >show collections
-4. Show movies:
+4. Show movies(documents):
 db.movies.find().pretty()
 
 Create new Atlas Cluster: https://cloud.mongodb.com/links/registerForAtlas
@@ -54,7 +57,11 @@ Note: IP Whitelisting should be present for security reasons.
 Create a user in MongoDB cluster for DB access
 u m001-student, p m001-mongodb-basics
 
-*Commands to access Atlas cluster and data*
+*Load Data into Sandbox Cluster*
+1. Navigate to the directory where loadMovieDetailsDataset.js file(the one that has datasets in it) is stored. 
+2. Connect to Atlas cluster
+3. MongoDB Enterprise Cluster0-shard-0:PRIMARY> load("loadMovieDetailsDataset.js")
+4. Run commands to view data 
 
 
 
