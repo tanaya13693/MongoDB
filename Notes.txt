@@ -69,6 +69,23 @@ u m001-student, p m001-mongodb-basics
 2. Connect to MongoDB compass
 
 
+*Insert a document into a collection in a database*
+Method 1: Inserting through Mongo Shell
+MongoDB Enterprise Cluster0-shard-0:PRIMARY> db.moviesScratch.insertOne({title:"
+Star Trek", year: 1991, imdb:"tt123678"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5dc86e238e693e84ea85a0e2")
+}
+
+Method 2: Use Compass GUI
+
+*
+
+
+
+
+
 
 
 
