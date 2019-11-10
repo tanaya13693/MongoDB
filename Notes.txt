@@ -87,6 +87,7 @@ Refer and load file "insertMany-ordered.js"
 1. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("type":"movie").pretty()
 2. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("wind.type":"C").pretty()
 3. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("wind.direction.angle":10).pretty()
+Note: Quotes are required abound keysin Mongo Shellbut not in Compass
 
 
 
