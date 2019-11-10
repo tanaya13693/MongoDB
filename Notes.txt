@@ -64,5 +64,24 @@ u m001-student, p m001-mongodb-basics
 4. Run commands to view data 
 
 
+*Connect compass with Atlas Sandbox Cluster*
+1. Get hostname from Atlas Cluster
+2. Connect to MongoDB compass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
