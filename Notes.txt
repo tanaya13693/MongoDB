@@ -80,7 +80,10 @@ Star Trek", year: 1991, imdb:"tt123678"})
 
 Method 2: Use Compass GUI
 
-*
+*Insert many document*
+Refer and load file "insertMany-ordered.js"
+
+
 
 
 
