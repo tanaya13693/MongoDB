@@ -105,8 +105,15 @@ Syntax > db.movies.find({genre:"Action, Adventure"}, {title: 1, _id: 0})
 Description: filter documents by genre. When displaying result set, show only title and not id.
 
 
+*Updaing documents*
+Use updateOne()/updateMany() function
 
+*Upserts*
+Add this field to updateOne() function. Set is as true. This will check first if the document exists already or not. If yes, it will udate the document else it will insert the document.
 
+* Delete operations *
+1. deleteOne()
+2. deleteMany()
 
 
 
