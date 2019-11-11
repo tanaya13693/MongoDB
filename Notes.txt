@@ -63,7 +63,6 @@ u m001-student, p m001-mongodb-basics
 3. MongoDB Enterprise Cluster0-shard-0:PRIMARY> load("loadMovieDetailsDataset.js")
 4. Run commands to view data 
 
-
 *Connect compass with Atlas Sandbox Cluster*
 1. Get hostname from Atlas Cluster
 2. Connect to MongoDB compass
@@ -87,7 +86,31 @@ Refer and load file "insertMany-ordered.js"
 1. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("type":"movie").pretty()
 2. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("wind.type":"C").pretty()
 3. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("wind.direction.angle":10).pretty()
+4. MongoDB Enterprise Cluster-0-shard-0:PRIMARY> db.movies.find("wind.direction.angle":10).pretty().count()
+5. Reading from an array: 
+    a. > db.movies.find({"cast.0": "Jeff Bridges"}).pretty()
+    b. > db.movies.find({"cast": ["Jeff Bridges","ABCD"]}).pretty()
 Note: Quotes are required abound keysin Mongo Shellbut not in Compass
+
+
+*Cursors*
+MongoShell is a client.
+Cursor is pointer to the dataset.
+Server return a batch of first 20 documents(e.g.) to client when requested.
+Using cursor we can navigate over documents.
+
+*Projections*
+Projection can allow/limit result to be displayed when queried.
+Syntax > db.movies.find({genre:"Action, Adventure"}, {title: 1, _id: 0})
+Description: filter documents by genre. When displaying result set, show only title and not id.
+
+
+
+
+
+
+
+
 
 
 
