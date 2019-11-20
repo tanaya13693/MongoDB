@@ -115,7 +115,17 @@ Add this field to updateOne() function. Set is as true. This will check first if
 1. deleteOne()
 2. deleteMany()
 
+------------------------------------------------------------------------------------------------------
 
+Chapter 3:
+
+*Comparison Operators example:
+>use video
+>db.movieDetails.find({runtime: {$gte:90, $lte:120}},{_id:0, title:1, runtime:1})
+>db.movieDetails.find({runtime: {$ne: "UNRATED"}},{_id:0, title:1, runtime:1})
+>db.data.find({atmosphericPressureChange: {$exists: false}}).count()
+
+*
 
 
 
