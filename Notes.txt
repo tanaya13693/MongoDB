@@ -50,6 +50,9 @@ To escape command prompt: >quit()
 >show collections
 4. Show movies(documents):
 db.movies.find().pretty()
+5. Use of filter and get count of documents example:
+>db.movieDetails.find({genres:"Comedy"}).pretty().count()
+
 
 Create new Atlas Cluster: https://cloud.mongodb.com/links/registerForAtlas
 IP Whitelisting - to allow access from anywhere
