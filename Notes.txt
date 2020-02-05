@@ -70,7 +70,6 @@ u m001-student, p m001-mongodb-basics
 1. Get hostname from Atlas Cluster
 2. Connect to MongoDB compass
 
-
 *Insert a document into a collection in a database*
 Method 1: Inserting through Mongo Shell
 MongoDB Enterprise Cluster0-shard-0:PRIMARY> db.moviesScratch.insertOne({title:"
@@ -95,6 +94,9 @@ Refer and load file "insertMany-ordered.js"
     b. > db.movies.find({"cast": ["Jeff Bridges","ABCD"]}).pretty()
 Note: Quotes are required abound keysin Mongo Shellbut not in Compass
 
+Another example of using filters:
+MongoDB Enterprise Cluster0-shard-0:PRIMARY> db.movieDetails.find({"awards.wins"
+:2, "awards.nominations":2}).pretty().count()
 
 *Cursors*
 MongoShell is a client.
