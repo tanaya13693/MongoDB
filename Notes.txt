@@ -130,9 +130,10 @@ Chapter 3:
 >db.movieDetails.find({runtime: {$ne: "UNRATED"}},{_id:0, title:1, runtime:1})
 >db.data.find({atmosphericPressureChange: {$exists: false}}).count()
 
-*
+-----------------------------------------------------------------------------------------------------
 
-
+***One Complex query from exams:
+{ $or: [ { "cast": "Jack Nicholson"}, {"cast" : "John Huston"} ], "viewerRating" : {"$gt" : 7}, "mpaaRating":"R" }
 
 
 
